@@ -17,7 +17,7 @@
 {% elif input_type == "radio" %}
     {% include "materialize/field_choices.html" with type="radio" %}
     {% include "materialize/field_help.html" with display="block" %}
-{% elif input_type == "text" or input_type == "textarea" or input_type == "url" or input_type == "email" %}
+{% elif input_type == "text" or input_type == "textarea" or input_type == "url" or input_type == "email" or input_type == "password" %}
     <div class="input-field col {{ col }}">
         {{ field }}
         <label for="{{ field.auto_id }}">
